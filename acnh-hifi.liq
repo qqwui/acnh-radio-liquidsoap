@@ -1,8 +1,10 @@
-#!/usr/bin/liquidsoap --quiet
+#!/usr/bin/liquidsoap
 
 icecast_host = "localhost"
 icecast_port = 8000
 icecast_password = "hackme"
+
+# Hifi radio stream
 
 hifi_playlist = playlist("/icecast/hifi/playlist.pls")
 hifi_mount = "hifi.ogg"
@@ -15,3 +17,5 @@ output.icecast(
     name=hifi_name, description=hifi_desc,
     mksafe(hifi_playlist)
 )
+
+# 

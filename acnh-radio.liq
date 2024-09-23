@@ -1,4 +1,4 @@
-#!/usr/bin/liquidsoap --quiet
+#!/usr/bin/liquidsoap
 
 icecast_host = "localhost"
 icecast_port = 8000
